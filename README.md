@@ -29,7 +29,10 @@ Perspective transform allows to take 'bird's eye' view of the image in order to 
 
 Function M = cv2.getPerspectiveTransform(src,dst) allows to obtain matrix M to transform images into 'bird's eye' view, matrix MInv allows to make inverse transformation from 'bird's eye' view into driver's view. In order to perform PT, we obtain four points on the left and right lane markers. Upon transpormation trapezoid formed by the four points should be represented by rectangle.
 
-![perspective transform](/images/perspective_transform_calibration.png)
+<p align="center">
+  <img src="images/perspective_transform_calibration.png" alt="perspective transform"/>
+</p>
+
 
 
 
