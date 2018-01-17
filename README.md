@@ -15,6 +15,6 @@ The project is organised by the following sections:
 ## Camera calibration
 
 
-![](images/chessboard.png)
+![](chessboard.png)
 
 
