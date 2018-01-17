@@ -59,7 +59,7 @@ The lanes are then detected using histogram of pixel values in the lower half of
 The sliding box methid is illustrated below.
 
 <p align="center">
-  <img src="images/lanes_boxes.png" alt="lane boxes"/>
+  <img src="images/lane_boxes.png" alt="lane boxes"/>
 </p>
 
 
