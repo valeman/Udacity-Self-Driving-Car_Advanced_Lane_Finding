@@ -14,6 +14,6 @@ The project is organised by the following sections:
 
 ## Camera calibration
 
-![chessboard](https://github.com/valeman/Udacity-Self-Driving-Car_Advanced_Lane_Finding/blob/master/images/chessboard.png)
+![chessboard](/images/chessboard.png)
 
 
