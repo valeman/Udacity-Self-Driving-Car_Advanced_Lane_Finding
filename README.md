@@ -21,7 +21,7 @@ The located corners are then mapped to the real chessboard and mapping matrix ob
 
 The results could be observed on an image:
 
-![original_image](/images/original_image.png)
+![distortion correction](/images/exmaple_distortion_correciton.png)
 
 ## Perspective transform
 
