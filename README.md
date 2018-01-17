@@ -27,11 +27,22 @@ The results could be observed on an image, whilst distorions could be subtle the
 
 Perspective transform allows to take 'bird's eye' view of the image in order to facilitate image processing. In particular it allows to represent parallel left and righ lane markers are they are - parallel. 
 
-Function M = cv2.getPerspectiveTransform(src,dst) allows to obtain matrix M to transform images into 'bird's eye' view, matrix MInv allows to make inverse transformation from 'bird's eye' view into driver's view. In order to perform PT, we obtain four points on the left and right lane markers. Upon transpormation trapezoid formed by the four points should be represented by rectangle.
+Function M = cv2.getPerspectiveTransform(src,dst) allows to obtain matrix M to transform images into 'bird's eye' view, matrix MInv allows to make inverse transformation from 'bird's eye' view into driver's view. In order to perform PT, we obtain four points on the left and right lane markers. Upon transpormation trapezoid formed by the four points should be represented by rectangle. The red points in the image below were selected on parallel lines in such a way that the distances on the left side and right side is the same.
 
 <p align="center">
   <img src="images/perspective_transform_calibration.png" alt="perspective transform"/>
 </p>
+
+we can illustrate this with a warped ('bird's eye') image:
+
+<p align="center">
+  <img src="images/warped-image.png" alt="perspective transform"/>
+</p>
+
+
+## Detecting lane lines
+
+
 
 
 
