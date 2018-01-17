@@ -17,3 +17,4 @@ The project is organised by the following sections:
 ![chessboard](/images/chessboard.png)
 
 
+  
