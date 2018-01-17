@@ -27,7 +27,7 @@ The results could be observed on an image:
 
 
 
-
+  
 
 
   
