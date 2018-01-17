@@ -15,6 +15,4 @@ The project is organised by the following sections:
 ## Camera calibration
 
 
-<p align="center">
-  <img src="images/chessboard.png" alt="Calibration chessboard"/>
-</p>
+![](images/chessboard.png)
