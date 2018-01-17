@@ -36,11 +36,24 @@ Function M = cv2.getPerspectiveTransform(src,dst) allows to obtain matrix M to t
 we can illustrate this with a warped ('bird's eye') image:
 
 <p align="center">
-  <img src="images/warped-image.png" alt="perspective transform"/>
+  <img src="images/warped_image.png" alt="perspective transform"/>
 </p>
 
 
 ## Detecting lane lines
+
+In the next step, we perform HLS transformation (example - image below).
+
+<p align="center">
+  <img src="images/HLS_original.png" alt="perspective transform"/>
+</p>
+
+And using mask for the S-channel in HLS colour space we obtain preliminary line detection on the warp images.
+
+<p align="center">
+  <img src="images/binary_S.png" alt="S-mask in HLS colour space"/>
+</p>
+
 
 
 
