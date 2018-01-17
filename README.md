@@ -77,6 +77,8 @@ distortion correction -> perspective transform -> channel mask -> lane detection
   <img src="images/image_pipeline.png" alt="image pipeline"/>
 </p>
 
+The pipeline performs reasonably well, but could be improved using more advanced algorithms, such as RANSAC etc (to be done later...) 
+[driver's view](https://youtu.be/3YCGYF2eT2I)
 
 
 
