@@ -19,11 +19,18 @@ Before processing dashcam videos we have to calibrate camera in order to undisto
 
 The located corners are then mapped to the real chessboard and mapping matrix obtained allowing to undistore images coming from the dashcam.
 
-The results could be observed on an image:
+The results could be observed on an image, whilst distorions could be subtle the difference is clearly seen in when we subtract two images (original and undistorted one) from each another. 
 
 ![distortion correction](/images/example_distortion_correction.png)
 
 ## Perspective transform
+
+Perspective transform allows to take 'bird's eye' view of the image in order to facilitate image processing. In particular it allows to represent parallel left and righ lane markers are they are - parallel. 
+
+Function M = cv2.getPerspectiveTransform(src,dst) allows to obtain matrix M to transform images into 'bird's eye' view, matrix MInv allows to make inverse transformation from 'bird's eye' view into driver's view. In order to perform PT, we obtain four points on the left and right lane markers. Upon transpormation trapezoid formed by the four points should be represented by rectangle.
+
+![perspective transform](/images/perspective_transform_calibration.png)
+
 
 
 
