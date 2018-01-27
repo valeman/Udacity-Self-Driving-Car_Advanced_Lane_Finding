@@ -59,7 +59,7 @@ In the next step, we perform HLS & HSV transformation and also Sobel gradient an
   <img src="images/image_mask.png" alt="binary mask"/>
 </p>
 
-The lanes are then detected using histogram of pixel values in the lower half of the thresholded image, this allows to locate x-values corresponding to the historgam peaks. Then using sliding windows method we can extract the lane pixels. The sliding windows are first placed centered at the base points locations for the left and right lanes, the x and y coordinates of all non-zero pixels are then compiled into seperate lists. The base points for the next horizontal band are then the columns with the maximum number of non-zero pixels in the current band. Secong degree polynomials are then fitted to the left and right lanes filtered with sliding boxes method.
+The images are then transormed into 'bird-eye' view usuing Perspective Transform. Further, the lanes are detected using histogram of pixel values in the lower half of the thresholded image, this allows to locate x-values corresponding to the historgam peaks. Then using sliding windows method we can extract the lane pixels. The sliding windows are first placed centered at the base points locations for the left and right lanes, the x and y coordinates of all non-zero pixels are then compiled into seperate lists. The base points for the next horizontal band are then the columns with the maximum number of non-zero pixels in the current band. Secong degree polynomials are then fitted to the left and right lanes filtered with sliding boxes method.
 
 The sliding box methid is illustrated below.
 
@@ -73,7 +73,7 @@ This was done using the functions from the lectures.
 
 ### Image processing pipeline
 
-The image processing pipeline performs all the steps listed above and then draws the lanes as well as prints out the curvature radiys and location of the car in the lane.
+The image processing pipeline performs all the steps listed above and then draws the lanes as well as prints out the curvature radius and location of the car in the lane.
 
 The steps are:
 distortion correction -> perspective transform -> channel mask -> lane detection -> sanity check -> draw lane
@@ -82,14 +82,14 @@ distortion correction -> perspective transform -> channel mask -> lane detection
   <img src="images/image_pipeline.png" alt="image pipeline"/>
 </p>
 
-The pipeline performs reasonably well, but could be improved using more advanced algorithms, such as RANSAC etc (to be done later...) 
-[driver's view](https://youtu.be/BBVmrYcywHk)
+## Discussion
+The pipeline performs well, it could be further improved using more advanced algorithms, such as RANSAC etc.  
+[driver's view](https://youtu.be/AEJn_SXN_fQ)
 
+The algorithm performs well on the current video, however it would face challenges in the following circumstances:
 
+- going up or down the hill
+- changing weather conditions (such as rain etc.)
+- worn out lanes
 
-
-
-  
-
-
-  
+Nevertheless, the project is a good application of classical computer techniques. More advanced methods, such as using convoluational neural network architectures can potentially result in further improvements.
