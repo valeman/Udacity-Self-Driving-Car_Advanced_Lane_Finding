@@ -15,7 +15,13 @@ The project is organised by the following sections:
 ## Camera calibration
 
 Before processing dashcam videos we have to calibrate camera in order to undistort distortions introduced by camera lense. This is performed by using chessboard, 20 chessboard images are processed by the OpenCV function cv2.findChessboardCorners which locates corners in the chessboard image.
-![chessboard](/images/chessboard.png)
+
+An example of image before distortion correction.
+![chessboard](/images/before_calibration.png)
+
+Which was corrected as follows.
+
+![chessboard](/images/after_calibration.png)
 
 The located corners are then mapped to the real chessboard and mapping matrix obtained allowing to undistore images coming from the dashcam.
 
