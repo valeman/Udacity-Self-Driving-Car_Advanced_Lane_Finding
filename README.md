@@ -19,13 +19,13 @@ Before processing dashcam videos we have to calibrate camera in order to undisto
 An example of image before distortion correction:
 
 <p align="center">
-  <img src="images/before_calibration.png" alt="before distortion correction"/>
+  <img src="images/dist_chessboard.png" alt="before distortion correction"/>
 </p>
 
 With the distortion corrected:
 
 <p align="center">
-  <img src="images/after_calibration.png" alt="after distortion correction"/>
+  <img src="images/undist_chessboard.png" alt="after distortion correction"/>
 </p>
 
 The located corners are then mapped to the real chessboard and mapping matrix obtained allowing to undistore images coming from the dashcam.
