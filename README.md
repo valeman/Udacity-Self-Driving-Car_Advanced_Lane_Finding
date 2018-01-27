@@ -82,7 +82,7 @@ This was done using the functions from the lectures.
 The image processing pipeline performs all the steps listed above and then draws the lanes as well as prints out the curvature radiys and location of the car in the lane.
 
 The steps are:
-distortion correction -> perspective transform -> channel mask -> lane detection
+distortion correction -> perspective transform -> channel mask -> lane detection -> sanity check -> draw lane
 
 <p align="center">
   <img src="images/image_pipeline.png" alt="image pipeline"/>
