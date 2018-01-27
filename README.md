@@ -93,3 +93,4 @@ The algorithm performs well on the current video, however it would face challeng
 - worn out lanes
 
 Nevertheless, the project is a good application of classical computer techniques. More advanced methods, such as using convoluational neural network architectures can potentially result in further improvements.
+
