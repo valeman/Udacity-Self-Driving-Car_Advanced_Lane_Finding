@@ -79,7 +79,7 @@ The steps are:
 distortion correction -> perspective transform -> channel mask -> lane detection -> sanity check -> draw lane
 
 <p align="center">
-  <img src="images/image_pipeline.png" alt="image pipeline"/>
+  <img src="images/pipeline_image.png" alt="image pipeline"/>
 </p>
 
 ## Discussion
