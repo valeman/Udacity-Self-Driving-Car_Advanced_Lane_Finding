@@ -53,16 +53,10 @@ we can illustrate this with a warped ('bird's eye') image:
 
 ## Detecting lane lines
 
-In the next step, we perform HLS transformation (example - image below).
+In the next step, we perform HLS & HSV transformation and also Sobel gradient and apply binary masks. After processing we obtain images  below.
 
 <p align="center">
-  <img src="images/HLS_original.png" alt="perspective transform"/>
-</p>
-
-And using mask for the S-channel in HLS colour space we obtain preliminary line detection on the warp images.
-
-<p align="center">
-  <img src="images/binary_S.png" alt="S-mask in HLS colour space"/>
+  <img src="images/image_mask.png" alt="binary mask"/>
 </p>
 
 The lanes are then detected using histogram of pixel values in the lower half of the thresholded image, this allows to locate x-values corresponding to the historgam peaks. Then using sliding windows method we can extract the lane pixels. The sliding windows are first placed centered at the base points locations for the left and right lanes, the x and y coordinates of all non-zero pixels are then compiled into seperate lists. The base points for the next horizontal band are then the columns with the maximum number of non-zero pixels in the current band. Secong degree polynomials are then fitted to the left and right lanes filtered with sliding boxes method.
